@@ -2,6 +2,10 @@
 
 = 0.4.x =
 
+== 0.4.1 ==
+  * HTML tags are now parsed correctly.
+  * Support for empty arrays ([ ], { }).
+
 == 0.4 ==
   * Integrated PHPUnit tests.
   * Fixed a bug with empty lines and comments indentation.
