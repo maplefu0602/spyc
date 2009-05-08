@@ -24,6 +24,6 @@ switches:
 Horde_YAML 1.0.1 parser performs a tiny bit faster than Spyc 0.4.1:
 
 {{{
-Horde_YAML: completed 200 iterations in 2.63788104057 s.
-Spyc: completed 200 iterations in 2.67162394524 s.
+Horde_YAML: completed 1000 iterations in 13.2576999664 s.
+Spyc: completed 1000 iterations in 13.3907561302 s.
 }}}
