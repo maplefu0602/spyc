@@ -1,6 +1,4 @@
-#summary Comparison with Syck
-
-= Comparison with Syck =
+= Spyc compared to Syck =
 
 [http://rubyforge.org/projects/syck/ Syck] is a cross-platform tool for parsing YAML and is written in C. It can be used as a PHP extension. Syck is fast, it has more robust YAML
 specification support.
