@@ -2,6 +2,13 @@
 
 = 0.4.x =
 
+== 0.4.2 ==
+  * Introduced functions for quick parsing: spyc_load, spyc_load_file
+  * Correct handling of dumping lists.
+  * A 5-to-4 tool to degrade Spyc to PHP4.
+  * A $setting_use_syck_is_possible (off by default) flag to use Syck if it is installed.
+  * Performance enhancements!
+
 == 0.4.1 ==
   * HTML tags are now parsed correctly.
   * Support for empty arrays ([ ], { }).
