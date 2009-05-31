@@ -4,7 +4,7 @@
 
 == 0.4.2 ==
   * Introduced functions for quick parsing: spyc_load, spyc_load_file
-  * Correct handling of dumping lists.
+  * Correct handling of dumping lists (thanks to Marco Bergantin)
   * A 5-to-4 tool to degrade Spyc to PHP4.
   * A $setting_use_syck_is_possible (off by default) flag to use Syck if it is installed.
   * Performance enhancements!
