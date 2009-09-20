@@ -12,8 +12,7 @@
   * Fixing multiline arrays.
   * Fixing trailing colons in Spyc values.
   * Fixed the problem with multiple newlines (reported by Piotr Gabryjeluk)
-  * Fixed the issue with consecutive integers starting with non-zero (thanks to
-Colin Thomas-Arnold)
+  * Fixed the issue with consecutive integers starting with non-zero (thanks to Colin Thomas-Arnold)
   * Fixing another bug with merging (thanks to Suman Debnath).
   * Fixed data merges and references.
   * Fixed hashes with numeric names
