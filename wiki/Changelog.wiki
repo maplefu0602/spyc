@@ -2,6 +2,23 @@
 
 = 0.4.x =
 
+== 0.4.5 ==
+
+  * Fixed the hash merge syntax (thanks to Moe).
+  * Fixed Spyc behaviour with empty arrays.
+  * Adding support to use Spyc from command line.
+  * Fixed dump problems with some special characters.
+  * Fixed problem with empty keys in YAML file.
+  * Fixing multiline arrays.
+  * Fixing trailing colons in Spyc values.
+  * Fixed the problem with multiple newlines (reported by Piotr Gabryjeluk)
+  * Fixed the issue with consecutive integers starting with non-zero (thanks to
+Colin Thomas-Arnold)
+  * Fixing another bug with merging (thanks to Suman Debnath).
+  * Fixed data merges and references.
+  * Fixed hashes with numeric names
+  * Fixed parser for keys with quotes.
+
 == 0.4.2 ==
   * Introduced functions for quick parsing: spyc_load, spyc_load_file
   * Correct handling of dumping lists (thanks to Marco Bergantin)
