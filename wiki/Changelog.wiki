@@ -2,22 +2,22 @@
 
 = 0.5 =
 
-* Fixed parsing 'null' values
-* Introducing roundtrip tests to ensure data won't be lost between cycles of dump/load
-* Fixed dumping trailing spaces
-* Fixed newline issues
-* Fixed issues with word wrapping
-* No more PHP notices out of the blue
-* Fixed an issue with key-value pairs
-* Fixed an issue with lists with comments
-* Fixed an issue with ampersands
-* Fixed dumping arrays
-* Fixed parsing small floats
-* Fixed parsing negative values
-* Fixed parsing apostrophes
-* Fixed parsing exclamation marks
-* Fixed handling of null values
-* Fixed indentation in |-style literal blocks
+  * Fixed parsing 'null' values
+  * Introducing roundtrip tests to ensure data won't be lost between cycles of dump/load
+  * Fixed dumping trailing spaces
+  * Fixed newline issues
+  * Fixed issues with word wrapping
+  * No more PHP notices out of the blue
+  * Fixed an issue with key-value pairs
+  * Fixed an issue with lists with comments
+  * Fixed an issue with ampersands
+  * Fixed dumping arrays
+  * Fixed parsing small floats
+  * Fixed parsing negative values
+  * Fixed parsing apostrophes
+  * Fixed parsing exclamation marks
+  * Fixed handling of null values
+  * Fixed indentation in |-style literal blocks
 
 = 0.4.x =
 
