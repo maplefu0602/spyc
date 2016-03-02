@@ -1,0 +1,119 @@
+# 0.5 #
+
+  * Fixed parsing 'null' values
+  * Introducing roundtrip tests to ensure data won't be lost between cycles of dump/load
+  * Fixed dumping trailing spaces
+  * Fixed newline issues
+  * Fixed issues with word wrapping
+  * No more PHP notices out of the blue
+  * Fixed an issue with key-value pairs
+  * Fixed an issue with lists with comments
+  * Fixed an issue with ampersands
+  * Fixed dumping arrays
+  * Fixed parsing small floats
+  * Fixed parsing negative values
+  * Fixed parsing apostrophes
+  * Fixed parsing exclamation marks
+  * Fixed handling of null values
+  * Fixed indentation in |-style literal blocks
+
+# 0.4.x #
+
+## 0.4.5 ##
+
+  * Fixed the hash merge syntax (thanks to Moe).
+  * Fixed Spyc behaviour with empty arrays.
+  * Adding support to use Spyc from command line.
+  * Fixed dump problems with some special characters.
+  * Fixed problem with empty keys in YAML file.
+  * Fixing multiline arrays.
+  * Fixing trailing colons in Spyc values.
+  * Fixed the problem with multiple newlines (reported by Piotr Gabryjeluk)
+  * Fixed the issue with consecutive integers starting with non-zero (thanks to Colin Thomas-Arnold)
+  * Fixing another bug with merging (thanks to Suman Debnath).
+  * Fixed data merges and references.
+  * Fixed hashes with numeric names
+  * Fixed parser for keys with quotes.
+
+## 0.4.2 ##
+  * Introduced functions for quick parsing: spyc\_load, spyc\_load\_file
+  * Correct handling of dumping lists (thanks to Marco Bergantin)
+  * A 5-to-4 tool to degrade Spyc to PHP4.
+  * A `$setting_use_syck_is_possible` (off by default) flag to use Syck if it is installed.
+  * Performance enhancements!
+
+## 0.4.1 ##
+  * HTML tags are now parsed correctly.
+  * Support for empty arrays ([ ], { }).
+
+## 0.4 ##
+  * Integrated PHPUnit tests.
+  * Fixed a bug with empty lines and comments indentation.
+  * Fixed multi-line sequences
+  * Fixed a bug with quotes ("<>")
+  * Fixed a bug with nested maps and sequences
+  * Fixed indenting and dedenting behaviour
+  * Multiple performance enhancements.
+
+# 0.3.x #
+
+## 0.3 ##
+  * Spyc parsing engine is rewritten from scratch (one-pass parsing). It runs now _much_ faster.
+  * A bug with colons in comments is fixed (thanks to Neil Galvin)
+  * Fixed a bug when the source ends with a literal block, the scripts loops for ever, with an error message (index out of bound). Thanks to Pascal  Diethelm.
+  * Some more bugs in the engine are fixed.
+  * Only alphanumeric characters are now allowed in reference names.
+  * Fixed a bug with inline arrays (thanks Tobiah for pointing it out).
+  * Fixed a bug with ">" symbol (thanks to Pierre Tardy).
+  * Numerous bugs also fixed (thanks to fellow programmers and bug reporters)
+
+# 0.2.x #
+
+## 0.2.5 ##
+  * All .yml file extensions changed to .yaml (see recommendation: http://yaml.org/faq.html)
+  * Compartibility fix for PHP < 4.2.0 (no need to compile PHP with --enable-ctype)
+  * PHP5 version is not failing self-tests now (one of the fixes for 0.2.4 was buggy)
+
+## 0.2.4 ##
+  * Sped up overall performance by a hundred times or so by using different node id generation algorithm.
+  * Implemented Tobias Gruetzmacher's changes:
+  * Explicit boolean dumping.
+  * Fixed a bug causing "`arr1: [a, ['1', "2"], b]`" to not parse correctly. Some important changes in `_inlineEscape()`.
+  * Fixed a bug for PHP5 version (YAMLDump and YAMLLoad should be declared static).
+  * Fixed a bug with malformed YAML resulting in E\_NOTICE level errors.
+  * Fixed a bug in YAMLDump that caused structures like "array ('key': 'colon: colon')" to be dumped in non-literal style.
+  * Sped up overall performance by 10% or so by using different child selection algorithm in `_gatherChildren`
+  * Another change for speed: optimized the behaviour of `_array_kmerge`
+
+## 0.2.3 ##
+  * Fixed a bug causing "- {name: "Foo, Bar's", age: 20}" to not parse correctly.  Related to `_inlineEscape()` changes in 0.2.2, I believe.
+
+## 0.2.2 ##
+  * Implemented Mustafa Kumas' changes:
+    * Improved regex in `_inlineEscape()` method.
+    * Improved handling of escaped single and double quotes within strings.
+
+## 0.2.1 ##
+  * Implemented Fabien Potencier's changes:
+    * Fixed warnings reported by E\_STRICT
+    * More complete YAML boolean support (on/off yes/no y/n)
+  * Produce error when someone tries to use tabs instead of spaces.
+  * Moved array\_kmerge function into a private method.
+  * Added PHP5 strict version of class (spyc.php5).
+  * Added line break preservation in dump()
+  * Added some string checking sanity before calling `file_exists()`
+
+## 0.2 ##
+  * Hashes (`#`) can now be used in strings, and comments work better.
+  * Fixed warning about non-object.
+  * Numeric keys are now allowed.
+  * '"key" : value' is now allowed (space after quoted key name)
+  * Underscore (`_`) and other crazy characters now allowed in key names of dumped arrays.
+  * Added options/parameters to change indent and wordwrap length in `dump()`
+  * Added a really primitive, lo-fi output test script.
+
+# 0.1.x #
+
+## 0.1.1 ##
+  * Fixed notices that were being generated when set to E\_ALL.
+  * Defined some private properties like a good OOPer.

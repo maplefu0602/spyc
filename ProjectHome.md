@@ -1,0 +1,1 @@
+**Spyc is now on Github**: http://github.com/mustangostang/spyc/

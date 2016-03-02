@@ -1,0 +1,29 @@
+## Comparing Spyc to Horde\_YAML ##
+
+[Horde\_YAML](http://pear.horde.org/index.php?package=yaml) is a YAML parser based on an older version of Spyc.
+
+## Parsing accuracy ##
+
+Horde\_YAML, as a package based on a deprecated Spyc version, has severe parsing flaws fixed in the recent versions of Spyc. For example, Horde\_YAML 1.0.1 will fail to parse the following examples of valid YAML:
+
+1.
+```
+array on several lines:
+  [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9,
+    10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ]
+```
+
+2.
+```
+switches:
+  - { row: 0, col: 0, func: {tx: [0, 1]} }
+```
+
+## Performance ##
+
+Horde\_YAML 1.0.1 parser performs a tiny bit faster than Spyc 0.4.1:
+
+```
+Horde_YAML: completed 1000 iterations in 13.2576999664 s.
+Spyc: completed 1000 iterations in 13.3907561302 s.
+```

@@ -1,0 +1,9 @@
+# Spyc compared to Syck #
+
+[Syck](http://rubyforge.org/projects/syck/) is a cross-platform tool for parsing YAML and is written in C. It can be used as a PHP extension. Syck is fast, it has more robust YAML
+specification support.
+
+However, the design aim of **Spyc** is quite different. Spyc is a _pure-PHP_ implementation of YAML parser. In order to use Spyc, you need nothing but PHP 5 (and with some simple modifications Spyc can run on PHP4 as well). You don't have to have admin permissions on your machine (that's relevant for shared hosting), you don't need to have any specific knowledge of how to install extensions or compile anything in UNIX environment. That's what 'S' in 'Spyc' stands for: Spyc is meant to be simple to the end user.
+
+As for performance, I was reported that Spyc runs about 3 times slower than Syck. However, on an average machine the differences of parsing speed of Syck and Spyc become
+noticeable only when parsing several thousand lines of code.
